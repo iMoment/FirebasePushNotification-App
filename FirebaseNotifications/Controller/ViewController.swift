@@ -9,17 +9,64 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //  MARK: Outlets
+    @IBOutlet weak var mainCollectionView: UICollectionView!
+    
+    //  MARK: Variables
+    var products = [Product]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        mainCollectionView.dataSource = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func onAddTapped(sender: UIBarButtonItem) {
+        AlertService.addProductAlert(in: self) { (product) in
+            self.products.append(product)
+            self.mainCollectionView.reloadData()
+        }
     }
-
-
+    
+    @IBAction func onSubscribeTapped(sender: UIBarButtonItem) {
+        AlertService.subscribeAlert(in: self)
+    }
 }
+
+extension ViewController: UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return products.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as? ProductCell else { return UICollectionViewCell() }
+        
+        let product = products[indexPath.item]
+        cell.configure(with: product)
+        
+        return cell
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
