@@ -54,14 +54,46 @@
 		91EA312F1F9AFE31008A5B1B /* FirebaseNotifications */ = {
 			isa = PBXGroup;
 			children = (
-				91EA31301F9AFE31008A5B1B /* AppDelegate.swift */,
-				91EA31321F9AFE31008A5B1B /* ViewController.swift */,
-				91EA31341F9AFE31008A5B1B /* Main.storyboard */,
-				91EA31371F9AFE31008A5B1B /* Assets.xcassets */,
-				91EA31391F9AFE31008A5B1B /* LaunchScreen.storyboard */,
+				91EA31451F9AFFD0008A5B1B /* Service */,
+				91EA31441F9AFFCB008A5B1B /* Model */,
+				91EA31431F9AFF2B008A5B1B /* View */,
+				91EA31421F9AFF22008A5B1B /* Controller */,
 				91EA313C1F9AFE31008A5B1B /* Info.plist */,
 			);
 			path = FirebaseNotifications;
+			sourceTree = "<group>";
+		};
+		91EA31421F9AFF22008A5B1B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				91EA31301F9AFE31008A5B1B /* AppDelegate.swift */,
+				91EA31321F9AFE31008A5B1B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		91EA31431F9AFF2B008A5B1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91EA31341F9AFE31008A5B1B /* Main.storyboard */,
+				91EA31371F9AFE31008A5B1B /* Assets.xcassets */,
+				91EA31391F9AFE31008A5B1B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91EA31441F9AFFCB008A5B1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91EA31451F9AFFD0008A5B1B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
