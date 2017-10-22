@@ -19,12 +19,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mainCollectionView.dataSource = self
+        
+        ProductsService.sharedInstance.delegate = self
+        ProductsService.sharedInstance.observeProducts()
     }
     
     @IBAction func onAddTapped(sender: UIBarButtonItem) {
         AlertService.addProductAlert(in: self) { (product) in
-            self.products.append(product)
-            self.mainCollectionView.reloadData()
+            ProductsService.sharedInstance.post(product: product)
         }
     }
     
@@ -53,6 +55,12 @@ extension ViewController: UICollectionViewDataSource {
     }
 }
 
+extension ViewController: ProductsServiceDelegate {
+    func didChange(products: [Product]) {
+        self.products = products
+        self.mainCollectionView.reloadData()
+    }
+}
 
 
 

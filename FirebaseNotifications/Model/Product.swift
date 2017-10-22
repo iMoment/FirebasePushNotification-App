@@ -13,8 +13,26 @@ struct Product {
     let title: String
     let cost: Double
     
+    init(title: String, cost: Double) {
+        self.title = title
+        self.cost = cost
+    }
+    
+    //  MARK: Failable with dictionary
+    init?(valueDictionary: [String: Any]) {
+        guard let title = valueDictionary["title"] as? String, let cost = valueDictionary["cost"] as? Double else { return nil }
+        self.title = title
+        self.cost = cost
+    }
+    
     func price() -> String {
         let costString = String(format: "%.2f", cost)
         return "$" + costString
+    }
+    
+    func parameters() -> [String: Any] {
+        let dictionary: [String: Any] = ["title": title,
+                                         "cost": cost]
+        return dictionary
     }
 }
