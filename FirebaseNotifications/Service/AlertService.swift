@@ -44,26 +44,3 @@ class AlertService {
         vc.present(alert, animated: true, completion: nil)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
