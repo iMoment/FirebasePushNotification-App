@@ -12,6 +12,7 @@
 		91CC5A8D1F9C4ECD00D0051E /* FIRDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CC5A8C1F9C4ECD00D0051E /* FIRDatabaseService.swift */; };
 		91CC5A8F1F9C605E00D0051E /* ProductsSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CC5A8E1F9C605E00D0051E /* ProductsSnapshot.swift */; };
 		91CC5A911F9C68B000D0051E /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CC5A901F9C68B000D0051E /* ProductsService.swift */; };
+		91CC5A931F9C806A00D0051E /* FIRMessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CC5A921F9C806A00D0051E /* FIRMessagingService.swift */; };
 		91DAEB261F9B16590038A228 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEB251F9B16590038A228 /* Product.swift */; };
 		91DAEB281F9B17000038A228 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEB271F9B17000038A228 /* ProductCell.swift */; };
 		91DAEB2A1F9B20240038A228 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DAEB291F9B20240038A228 /* AlertService.swift */; };
@@ -30,6 +31,7 @@
 		91CC5A8C1F9C4ECD00D0051E /* FIRDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRDatabaseService.swift; sourceTree = "<group>"; };
 		91CC5A8E1F9C605E00D0051E /* ProductsSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsSnapshot.swift; sourceTree = "<group>"; };
 		91CC5A901F9C68B000D0051E /* ProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
+		91CC5A921F9C806A00D0051E /* FIRMessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRMessagingService.swift; sourceTree = "<group>"; };
 		91DAEB251F9B16590038A228 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		91DAEB271F9B17000038A228 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		91DAEB291F9B20240038A228 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				91DAEB2B1F9B35E60038A228 /* UNService.swift */,
 				91CC5A8C1F9C4ECD00D0051E /* FIRDatabaseService.swift */,
 				91CC5A901F9C68B000D0051E /* ProductsService.swift */,
+				91CC5A921F9C806A00D0051E /* FIRMessagingService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				91CC5A8F1F9C605E00D0051E /* ProductsSnapshot.swift in Sources */,
 				91DAEB261F9B16590038A228 /* Product.swift in Sources */,
 				91DAEB2A1F9B20240038A228 /* AlertService.swift in Sources */,
+				91CC5A931F9C806A00D0051E /* FIRMessagingService.swift in Sources */,
 				91CC5A911F9C68B000D0051E /* ProductsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -34,10 +34,10 @@ class AlertService {
     static func subscribeAlert(in vc: UIViewController) {
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let subscribe = UIAlertAction(title: "Subscribe", style: .default) { (_) in
-            print("User subscribed to notifications.")
+            FIRMessagingService.sharedInstance.subscribe(to: .newProducts)
         }
         let unsubscribe = UIAlertAction(title: "Unsubscribe", style: .destructive) { (_) in
-            print("User unsubscribed to notifications.")
+            FIRMessagingService.sharedInstance.unsubscribe(from: .newProducts)
         }
         alert.addAction(subscribe)
         alert.addAction(unsubscribe)
